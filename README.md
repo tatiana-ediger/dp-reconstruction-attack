@@ -2,7 +2,7 @@
 
 Task: 
 A social media company wants to provide information to its advertisers on how often people click
-on their ads. You work for an advertiser. Each hour, the company gives you the demographic prole
+on their ads. You work for an advertiser. Each hour, the company gives you the demographic profile
 of one user who saw your ad. This demographic profile is rich enough for you to identify the user
 in your own database. They also give you a running count of the number of users who have actually
 clicked on your ad. They add a little bit of noise “to protect users’ privacy”, but you suspect that you
