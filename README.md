@@ -15,13 +15,16 @@ select a uniformly random bit zi (independently of previous ones) and output ai 
 
 (In other words, at each step, we flip a coin to decide whether we should add one fake person to the
 counter or not).
+
 How well can one recover the vector x from the sequence of outputs a? The answer depends on
 what we know about x ahead of time. We will consider two situations:
 
-    (a) The bits of x are uniformly random and independent. The only input to the attacker is a (the
-vector of noisy counters).
+   (a) The bits of x are uniformly random and independent. The only input to the attacker is a (the
+       vector of noisy counters).
 
-    (b) The bits of x are uniformly random and independent, but the attacker has some extra information. For each i, the attacker has a guess wi which is equal to xi with probability 2/3, independently for each i. The attacker’s inputs consist of a and the vector of guesses w.
+   (b) The bits of x are uniformly random and independent, but the attacker has some extra information. 
+       For each i, the attacker has a guess wi which is equal to xi with probability 2/3, independently for each i. 
+       The attacker’s inputs consist of a and the vector of guesses w.
 
 CODE:
 All the code is located in attack.ipynb, and the functions run_experiment (for part a) and run_experiment_with_prior (for part b) allow you to run the attacks for a specified n and view the resulting mean accuracy and standard deviation. 
