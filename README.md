@@ -1,4 +1,4 @@
-#README:
+README:
 
 Task: 
 A social media company wants to provide information to its advertisers on how often people click
@@ -20,3 +20,6 @@ what we know about x ahead of time. We will consider two situations:
 (a) The bits of x are uniformly random and independent. The only input to the attacker is a (the
 vector of noisy counters).
 (b) The bits of x are uniformly random and independent, but the attacker has some extra information. For each i, the attacker has a guess wi which is equal to xi with probability 2/3, independently for each i. The attacker’s inputs consist of a and the vector of guesses w.
+
+Code:
+All the code is located in attack.ipynb, and the functions run_experiment and run_experiment_with_prior allow you to run the attacks for a specified n and view the resulting mean accuracy and standard deviation. 
